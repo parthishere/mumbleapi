@@ -32,6 +32,8 @@ class UserProfileSerializer(serializers.ModelSerializer):
         return pic
 
 
+# comment
+
 class CurrentUserSerializer(serializers.ModelSerializer):
     profile = serializers.SerializerMethodField(read_only=True)
     class Meta:
